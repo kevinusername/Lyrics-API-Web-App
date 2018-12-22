@@ -1,0 +1,36 @@
+.yt-button {
+  /* Youtube color from brancolors.net */
+  background-color: #ff0000;
+  color: white;
+}
+
+.spotify-button {
+  /* Spotify color from brancolors.net */
+  background-color: #1db954;
+  color: white;
+}
+
+.search-button {
+  background-color: #bdbdbd;
+  border-color: #9e9e9e;
+}
+
+.tutorial {
+  color: white;
+  padding-top: 30px;
+}
+
+@media (max-width: 970px) {
+  .mr-sm-2 {
+    margin-bottom: 7px;
+  }
+}
+
+.spotify-logo {
+  height: 25px;
+}
+
+.yt-logo {
+  height: 20px;
+  margin-bottom: 3px;
+}
