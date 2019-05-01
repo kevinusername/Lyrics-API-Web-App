@@ -6,11 +6,12 @@
   "main": "",
   "scripts": {
     "start": "superstatic",
-    "test": "eslint '**/*.js' && ./node_modules/karma/bin/karma start --single-run"  },
+    "test": "eslint '**/*.js' && ./node_modules/karma/bin/karma start --single-run"
+  },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^5.9.0",
+    "eslint": "^5.16.0",
     "jasmine-core": "latest",
     "karma": "latest",
     "karma-chrome-launcher": "latest",
