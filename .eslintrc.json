@@ -1,0 +1,25 @@
+{
+  "env": {
+      "browser": true,
+      "commonjs": true,
+      "jest": true,
+      "es6": true,
+      "jquery": true
+  },
+  "extends": "airbnb-base",
+  "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+      "ecmaVersion": 2018
+  },
+  "rules": {
+      "indent": ["error", 4],
+      "object-property-newline": "off",
+      "func-names": "off",
+      "no-console": "off",
+      "object-curly-newline": ["error", {"multiline": true, "minProperties": 5}],
+      "no-continue": "off"
+  }
+}
