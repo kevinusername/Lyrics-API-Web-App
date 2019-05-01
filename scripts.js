@@ -12,7 +12,7 @@
 // uses for a [single!] top-level name.
 //
 // Module managers address even this issue, for web apps of sufficient complexity.
-import { searchLyrics, youtubeSearch, spotifySearch, spotifyRecommendations } from './api';
+// import { searchLyrics, youtubeSearch, spotifySearch, spotifyRecommendations } from './api';
 
 const setupEventListeners = () => {
     const searchButton = $('#search-button');
@@ -127,32 +127,71 @@ const generateHeader = (artist, track) => {
 
 const getRecommendations = (artistSeed, trackSeed) => {
     spotifyRecommendations(artistSeed, trackSeed).then((result) => {
+        // console.log(result);
         $('#recommendations')
             .empty()
             .append($('<h3>Recommendations:</h3>'));
-        for (let i = 0; i < result.tracks.length; i++) {
+        result.tracks.forEach((track, i) => {
             $('#recommendations').append(
                 $('<div></div>')
                     .addClass('row')
                     .attr('id', `rec${i}`)
                     .attr('style', 'margin-top:5px')
-                    .append($('<p></p>').text(result.tracks[i].name).addClinit)
+                    .append($('<p>').text(track.name))
                     .click(() => {
-                        $('#artist-name').val(result.tracks[i].artists[0].name);
+                        $('#artist-name').val(track.artists[0].name);
                         $('#song-name')
-                            .val(result.tracks[i].name)
+                            .val(track.name)
                             .trigger('input');
                         $('#search-button').click();
                     })
                     .prepend(
                         $('<img>')
-                            .attr('src', result.tracks[i].album.images[1].url)
+                            .attr('src', track.album.images[1].url)
                             .attr('style', 'height:50px')
                             .addClass('col-auto'),
                     ),
             );
-        }
+        });
     });
+};
+
+const spotifyToken = 'BQC7epchFWQQkCYISlW5H6_jJWj_bcVbR8fWpA8T32kUAxu38dl6Wjt2nM6owvN30ox0QejQjxIotx2IdnM';
+const youtubeKey = 'AIzaSyAfMRljYNN6yDhCS7fmhbC46mfw9rQFE7g';
+const lyricsKey = 'jZTFcQIDm9bSctMHnFHDW3r0VMWGq55RucTyD4iWiYVip6thmqI1hfiQ1Z7xLxFU';
+
+const searchLyrics = (artist, track) => {
+    artist = artist.trim().replace(' ', '+');
+    track = track.trim().replace(' ', '+');
+    const fetchString = `https://orion.apiseeds.com/api/music/lyric/${artist}/${track}?apikey=${lyricsKey}`;
+
+    return fetch(fetchString).then(response => response.json());
+};
+
+// Actual response of Youtube API searching for sample song
+const youtubeSearch = (artist, track) => {
+    artist = artist.trim().replace(' ', '+');
+    track = track.trim().replace(' ', '+');
+    const fetchString = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&order=relevance&q=${artist}${track}&key=${youtubeKey}`;
+    return fetch(fetchString).then(response => response.json());
+};
+
+// Actual response of Spotify API searching for sample song
+const spotifySearch = (artist, track) => {
+    artist = artist.trim().replace(' ', '+');
+    track = track.trim().replace(' ', '+');
+    const fetchString = `https://api.spotify.com/v1/search?query=track:${track}+artist:${artist}&type=track&market=US&offset=0&limit=1`;
+
+    return fetch(fetchString, { headers: { Authorization: `Bearer ${spotifyToken}` } }).then(
+        response => response.json(),
+    );
+};
+
+const spotifyRecommendations = (artistSeed, trackSeed) => {
+    const fetchString = `https://api.spotify.com/v1/recommendations?limit=3&market=US&seed_artists=${artistSeed}&seed_tracks=${trackSeed}`;
+    return fetch(fetchString, { headers: { Authorization: `Bearer ${spotifyToken}` } }).then(
+        response => response.json(),
+    );
 };
 
 setupEventListeners();
