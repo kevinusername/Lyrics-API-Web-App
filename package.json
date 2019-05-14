@@ -16,10 +16,8 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-node": "^8.0.1",
-    "jest": "^24.7.1",
-    "prettier-eslint": "^8.8.2",
-    "prettier-eslint-cli": "^4.7.1",
     "jasmine-core": "latest",
+    "jest": "^24.8.0",
     "karma": "latest",
     "karma-chrome-launcher": "latest",
     "karma-coverage": "latest",
@@ -27,81 +25,12 @@
     "karma-fixture": "latest",
     "karma-html2js-preprocessor": "latest",
     "karma-jasmine": "latest",
-    "karma-jquery": "latest",
+    "karma-jquery": "^0.2.4",
     "karma-sinon": "latest",
+    "prettier-eslint": "^8.8.2",
+    "prettier-eslint-cli": "^4.7.1",
     "sinon": "latest",
     "superstatic": "latest"
-  },
-  "eslintConfig": {
-    "env": {
-      "browser": true,
-      "jasmine": true,
-      "jquery": true,
-      "node": true,
-      "es6": true
-    },
-    "extends": "eslint:recommended",
-    "globals": {
-      "fixture": true,
-      "sinon": true
-    },
-    "rules": {
-      "no-extra-parens": 2,
-      "curly": 2,
-      "eqeqeq": 2,
-      "no-eval": 2,
-      "no-global-assign": 2,
-      "no-lone-blocks": 2,
-      "no-multi-spaces": 2,
-      "no-return-assign": 2,
-      "brace-style": [
-        2,
-        "1tbs",
-        {
-          "allowSingleLine": true
-        }
-      ],
-      "camelcase": [
-        2,
-        {
-          "properties": "never"
-        }
-      ],
-      "func-style": [
-        2,
-        "expression"
-      ],
-      "comma-spacing": 2,
-      "computed-property-spacing": 2,
-      "func-call-spacing": 2,
-      "indent": [
-        "error",
-        2
-      ],
-      "key-spacing": 2,
-      "keyword-spacing": 2,
-      "semi-spacing": 2,
-      "space-in-parens": 2,
-      "space-infix-ops": 2,
-      "space-unary-ops": 2,
-      "spaced-comment": 2,
-      "lines-around-comment": 2,
-      "max-len": [
-        2,
-        128
-      ],
-      "new-parens": 2,
-      "no-tabs": 2,
-      "operator-linebreak": [
-        2,
-        "after"
-      ],
-      "no-console": 1,
-      "semi": [
-        2,
-        "never"
-      ]
-    }
   },
   "dependencies": {
     "cors": "^2.8.4",

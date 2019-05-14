@@ -11,8 +11,9 @@ describe('Lyrics search', () => {
     it('should start with a disabled search button', () => expect($('#search-button').prop('disabled')).toBe(true));
 
     describe('search button', () => {
-        let searchButton; let artist; let
-            song;
+        let searchButton;
+        let artist;
+        let song;
 
         beforeEach(() => {
             searchButton = $('#search-button');
@@ -110,7 +111,8 @@ describe('Lyrics search', () => {
                                             id: '3u1ulLq00Y3bfmq9FfjsPu',
                                             name: 'Ween',
                                             type: 'artist',
-                                            uri: 'spotify:artist:3u1ulLq00Y3bfmq9FfjsPu',
+                                            uri:
+                                                'spotify:artist:3u1ulLq00Y3bfmq9FfjsPu',
                                         },
                                     ],
                                     external_urls: {
@@ -158,7 +160,8 @@ describe('Lyrics search', () => {
                                         id: '3u1ulLq00Y3bfmq9FfjsPu',
                                         name: 'Ween',
                                         type: 'artist',
-                                        uri: 'spotify:artist:3u1ulLq00Y3bfmq9FfjsPu',
+                                        uri:
+                                            'spotify:artist:3u1ulLq00Y3bfmq9FfjsPu',
                                     },
                                 ],
                                 disc_number: 1,
@@ -169,7 +172,8 @@ describe('Lyrics search', () => {
                                     spotify:
                                         'https://open.spotify.com/track/6M14BiCN00nOsba4JaYsHW',
                                 },
-                                href: 'https://api.spotify.com/v1/tracks/6M14BiCN00nOsba4JaYsHW',
+                                href:
+                                    'https://api.spotify.com/v1/tracks/6M14BiCN00nOsba4JaYsHW',
                                 id: '6M14BiCN00nOsba4JaYsHW',
                                 is_local: false,
                                 is_playable: true,
@@ -211,14 +215,16 @@ describe('Lyrics search', () => {
                                         id: '3u1ulLq00Y3bfmq9FfjsPu',
                                         name: 'Ween',
                                         type: 'artist',
-                                        uri: 'spotify:artist:3u1ulLq00Y3bfmq9FfjsPu',
+                                        uri:
+                                            'spotify:artist:3u1ulLq00Y3bfmq9FfjsPu',
                                     },
                                 ],
                                 external_urls: {
                                     spotify:
                                         'https://open.spotify.com/album/6H5fUQk4FkT9iR4SNHnK3D',
                                 },
-                                href: 'https://api.spotify.com/v1/albums/6H5fUQk4FkT9iR4SNHnK3D',
+                                href:
+                                    'https://api.spotify.com/v1/albums/6H5fUQk4FkT9iR4SNHnK3D',
                                 id: '6H5fUQk4FkT9iR4SNHnK3D',
                                 images: [
                                     {
@@ -255,15 +261,20 @@ describe('Lyrics search', () => {
                                     id: '3u1ulLq00Y3bfmq9FfjsPu',
                                     name: 'Ween',
                                     type: 'artist',
-                                    uri: 'spotify:artist:3u1ulLq00Y3bfmq9FfjsPu',
+                                    uri:
+                                        'spotify:artist:3u1ulLq00Y3bfmq9FfjsPu',
                                 },
                             ],
                             disc_number: 1,
                             duration_ms: 242600,
                             explicit: false,
                             external_ids: { isrc: 'USEE19694764' },
-                            external_urls: { spotify: 'https://open.spotify.com/track/1fxyunx4FdwnbCXjWl9RhQ' },
-                            href: 'https://api.spotify.com/v1/tracks/1fxyunx4FdwnbCXjWl9RhQ',
+                            external_urls: {
+                                spotify:
+                                    'https://open.spotify.com/track/1fxyunx4FdwnbCXjWl9RhQ',
+                            },
+                            href:
+                                'https://api.spotify.com/v1/tracks/1fxyunx4FdwnbCXjWl9RhQ',
                             id: '1fxyunx4FdwnbCXjWl9RhQ',
                             is_playable: true,
                             name: "I'm Holding You",
@@ -289,14 +300,16 @@ describe('Lyrics search', () => {
                                         id: '3QDaXfnxfQqqJQK5lSdjLN',
                                         name: 'Jerry Garcia',
                                         type: 'artist',
-                                        uri: 'spotify:artist:3QDaXfnxfQqqJQK5lSdjLN',
+                                        uri:
+                                            'spotify:artist:3QDaXfnxfQqqJQK5lSdjLN',
                                     },
                                 ],
                                 external_urls: {
                                     spotify:
                                         'https://open.spotify.com/album/3U0p9Fjv2QN72aL4hT1fwe',
                                 },
-                                href: 'https://api.spotify.com/v1/albums/3U0p9Fjv2QN72aL4hT1fwe',
+                                href:
+                                    'https://api.spotify.com/v1/albums/3U0p9Fjv2QN72aL4hT1fwe',
                                 id: '3U0p9Fjv2QN72aL4hT1fwe',
                                 images: [
                                     {
@@ -333,15 +346,20 @@ describe('Lyrics search', () => {
                                     id: '3QDaXfnxfQqqJQK5lSdjLN',
                                     name: 'Jerry Garcia',
                                     type: 'artist',
-                                    uri: 'spotify:artist:3QDaXfnxfQqqJQK5lSdjLN',
+                                    uri:
+                                        'spotify:artist:3QDaXfnxfQqqJQK5lSdjLN',
                                 },
                             ],
                             disc_number: 1,
                             duration_ms: 179360,
                             explicit: false,
                             external_ids: { isrc: 'USRHD0430757' },
-                            external_urls: { spotify: 'https://open.spotify.com/track/0zf9xqwYkkaBsg9we31bhi' },
-                            href: 'https://api.spotify.com/v1/tracks/0zf9xqwYkkaBsg9we31bhi',
+                            external_urls: {
+                                spotify:
+                                    'https://open.spotify.com/track/0zf9xqwYkkaBsg9we31bhi',
+                            },
+                            href:
+                                'https://api.spotify.com/v1/tracks/0zf9xqwYkkaBsg9we31bhi',
                             id: '0zf9xqwYkkaBsg9we31bhi',
                             is_playable: true,
                             name: 'I Saw Her Standing There',
@@ -367,7 +385,8 @@ describe('Lyrics search', () => {
                                         id: '6ra4GIOgCZQZMOaUECftGN',
                                         name: 'Frank Zappa',
                                         type: 'artist',
-                                        uri: 'spotify:artist:6ra4GIOgCZQZMOaUECftGN',
+                                        uri:
+                                            'spotify:artist:6ra4GIOgCZQZMOaUECftGN',
                                     },
                                     {
                                         external_urls: {
@@ -379,14 +398,16 @@ describe('Lyrics search', () => {
                                         id: '3P2gYnypDVi90ZavnaAhfL',
                                         name: 'The Mothers Of Invention',
                                         type: 'artist',
-                                        uri: 'spotify:artist:3P2gYnypDVi90ZavnaAhfL',
+                                        uri:
+                                            'spotify:artist:3P2gYnypDVi90ZavnaAhfL',
                                     },
                                 ],
                                 external_urls: {
                                     spotify:
                                         'https://open.spotify.com/album/6qfS5de8GAy1G5tk7tyiof',
                                 },
-                                href: 'https://api.spotify.com/v1/albums/6qfS5de8GAy1G5tk7tyiof',
+                                href:
+                                    'https://api.spotify.com/v1/albums/6qfS5de8GAy1G5tk7tyiof',
                                 id: '6qfS5de8GAy1G5tk7tyiof',
                                 images: [
                                     {
@@ -423,7 +444,8 @@ describe('Lyrics search', () => {
                                     id: '6ra4GIOgCZQZMOaUECftGN',
                                     name: 'Frank Zappa',
                                     type: 'artist',
-                                    uri: 'spotify:artist:6ra4GIOgCZQZMOaUECftGN',
+                                    uri:
+                                        'spotify:artist:6ra4GIOgCZQZMOaUECftGN',
                                 },
                                 {
                                     external_urls: {
@@ -435,15 +457,20 @@ describe('Lyrics search', () => {
                                     id: '3P2gYnypDVi90ZavnaAhfL',
                                     name: 'The Mothers Of Invention',
                                     type: 'artist',
-                                    uri: 'spotify:artist:3P2gYnypDVi90ZavnaAhfL',
+                                    uri:
+                                        'spotify:artist:3P2gYnypDVi90ZavnaAhfL',
                                 },
                             ],
                             disc_number: 1,
                             duration_ms: 350053,
                             explicit: false,
                             external_ids: { isrc: 'USZPE1200012' },
-                            external_urls: { spotify: 'https://open.spotify.com/track/2j25bv2cpByJLaNZRKEBwR' },
-                            href: 'https://api.spotify.com/v1/tracks/2j25bv2cpByJLaNZRKEBwR',
+                            external_urls: {
+                                spotify:
+                                    'https://open.spotify.com/track/2j25bv2cpByJLaNZRKEBwR',
+                            },
+                            href:
+                                'https://api.spotify.com/v1/tracks/2j25bv2cpByJLaNZRKEBwR',
                             id: '2j25bv2cpByJLaNZRKEBwR',
                             is_playable: true,
                             name: 'Trouble Every Day',
@@ -461,7 +488,8 @@ describe('Lyrics search', () => {
                             afterRelinkingSize: 250,
                             id: '3u1ulLq00Y3bfmq9FfjsPu',
                             type: 'ARTIST',
-                            href: 'https://api.spotify.com/v1/artists/3u1ulLq00Y3bfmq9FfjsPu',
+                            href:
+                                'https://api.spotify.com/v1/artists/3u1ulLq00Y3bfmq9FfjsPu',
                         },
                         {
                             initialPoolSize: 250,
@@ -469,7 +497,8 @@ describe('Lyrics search', () => {
                             afterRelinkingSize: 249,
                             id: '6M14BiCN00nOsba4JaYsHW',
                             type: 'TRACK',
-                            href: 'https://api.spotify.com/v1/tracks/6M14BiCN00nOsba4JaYsHW',
+                            href:
+                                'https://api.spotify.com/v1/tracks/6M14BiCN00nOsba4JaYsHW',
                         },
                     ],
                 }),
@@ -478,7 +507,8 @@ describe('Lyrics search', () => {
             window.ApiService.youtubeSearch.returns(
                 Promise.resolve({
                     kind: 'youtube#searchListResponse',
-                    etag: '"XI7nbFXulYBIpL0ayR_gDh3eu1k/taChDdn7lbAH9fFy9wEEQT8b-NA"',
+                    etag:
+                        '"XI7nbFXulYBIpL0ayR_gDh3eu1k/taChDdn7lbAH9fFy9wEEQT8b-NA"',
                     nextPageToken: 'CAEQAA',
                     regionCode: 'US',
                     pageInfo: {
@@ -488,7 +518,8 @@ describe('Lyrics search', () => {
                     items: [
                         {
                             kind: 'youtube#searchResult',
-                            etag: '"XI7nbFXulYBIpL0ayR_gDh3eu1k/UgGDn1og4J4QAzHDi7Ml27atB4c"',
+                            etag:
+                                '"XI7nbFXulYBIpL0ayR_gDh3eu1k/UgGDn1og4J4QAzHDi7Ml27atB4c"',
                             id: {
                                 kind: 'youtube#video',
                                 videoId: 'cs926AIL-ck',
@@ -500,17 +531,20 @@ describe('Lyrics search', () => {
                                 description: 'From "The Mollusk"',
                                 thumbnails: {
                                     default: {
-                                        url: 'https://i.ytimg.com/vi/cs926AIL-ck/default.jpg',
+                                        url:
+                                            'https://i.ytimg.com/vi/cs926AIL-ck/default.jpg',
                                         width: 120,
                                         height: 90,
                                     },
                                     medium: {
-                                        url: 'https://i.ytimg.com/vi/cs926AIL-ck/mqdefault.jpg',
+                                        url:
+                                            'https://i.ytimg.com/vi/cs926AIL-ck/mqdefault.jpg',
                                         width: 320,
                                         height: 180,
                                     },
                                     high: {
-                                        url: 'https://i.ytimg.com/vi/cs926AIL-ck/hqdefault.jpg',
+                                        url:
+                                            'https://i.ytimg.com/vi/cs926AIL-ck/hqdefault.jpg',
                                         width: 480,
                                         height: 360,
                                     },
@@ -561,7 +595,9 @@ describe('Lyrics search', () => {
                 $('#album-art')
                     .find($('img'))
                     .attr('src'),
-            ).toBe('https://i.scdn.co/image/4a3fcbe20ab3af2fb0c6d678b52497d08d45844a');
+            ).toBe(
+                'https://i.scdn.co/image/4a3fcbe20ab3af2fb0c6d678b52497d08d45844a',
+            );
             done();
         }, FETCH_COMPLETION_DELAY));
 
@@ -581,7 +617,9 @@ describe('Lyrics search', () => {
     describe('failed API calls', () => {
         beforeEach(() => {
             sinon.stub(window.ApiService, 'searchLyrics');
-            window.ApiService.searchLyrics.returns(Promise.reject('Mock failure'));
+            window.ApiService.searchLyrics.returns(
+                Promise.reject('Mock failure'),
+            );
 
             $('#artist-name').val('hello failure');
             $('#song-name').val('my old friend');
@@ -596,7 +634,9 @@ describe('Lyrics search', () => {
             // In this test, we have chosen not to a specific message; we’re just making sure that an alert-danger
             // element showed up. Of course, we _may_ choose to expect a particular message, especially if we want
             // it to say something specific to the user.
-            expect($('#main-col').find('.alert.alert-danger').length).toBe(2);
+            expect($('#main-col').find('.alert.alert-danger').length).toBe(
+                2,
+            );
             done();
         }, FETCH_COMPLETION_DELAY));
     });

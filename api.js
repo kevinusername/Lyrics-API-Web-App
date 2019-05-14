@@ -34,21 +34,12 @@ const spotifySearch = (artist, track) => {
     track = track.trim().replace(' ', '+');
     const fetchString = `https://api.spotify.com/v1/search?query=track:${track}+artist:${artist}&type=track&market=US&offset=0&limit=1`;
 
-    return fetch(fetchString, { headers: { Authorization: `Bearer ${spotifyToken}` } }).then(
-        response => response.json(),
-    );
+    return fetch(fetchString, { headers: { Authorization: `Bearer ${spotifyToken}` } }).then(response => response.json());
 };
 
 const spotifyRecommendations = (artistSeed, trackSeed) => {
     const fetchString = `https://api.spotify.com/v1/recommendations?limit=3&market=US&seed_artists=${artistSeed}&seed_tracks=${trackSeed}`;
-    return fetch(fetchString, { headers: { Authorization: `Bearer ${spotifyToken}` } }).then(
-        response => response.json(),
-    );
+    return fetch(fetchString, { headers: { Authorization: `Bearer ${spotifyToken}` } }).then(response => response.json());
 };
 
-export {
-    searchLyrics,
-    youtubeSearch,
-    spotifySearch,
-    spotifyRecommendations,
-};
+export { searchLyrics, youtubeSearch, spotifySearch, spotifyRecommendations };
