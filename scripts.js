@@ -148,7 +148,7 @@ function getRecommendations(artistSeed, trackSeed) {
 }
 
 // These shouldn't be here, but I would need a server for this otherwise.
-const spotifyToken = 'BQBDsAox5xCV3Rq8_PWhkrjBUPcfihOmgsp8QUFhGZj3YOvMEqfhO5ly0IlzzGSqEhLqlv7YR54HItOeIXI';
+const spotifyToken = 'BQDTJkbhY7kbF0e1KpRvf9UI9F7xVL3928MOB8lM1xDRr3tYX48nXE6Skg9nRlgg9clKvNLtWHNrRTGmgn0';
 const youtubeKey = 'AIzaSyAfMRljYNN6yDhCS7fmhbC46mfw9rQFE7g';
 const lyricsKey = 'jZTFcQIDm9bSctMHnFHDW3r0VMWGq55RucTyD4iWiYVip6thmqI1hfiQ1Z7xLxFU';
 

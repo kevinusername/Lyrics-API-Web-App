@@ -8,7 +8,7 @@
 
 // Must be regenerated every hour by running node app.js and pasting the key here
 // Not sure if there is a better way to do this without excessive effort/libraries
-const spotifyToken = 'BQC7epchFWQQkCYISlW5H6_jJWj_bcVbR8fWpA8T32kUAxu38dl6Wjt2nM6owvN30ox0QejQjxIotx2IdnM';
+const spotifyToken = 'BQDTJkbhY7kbF0e1KpRvf9UI9F7xVL3928MOB8lM1xDRr3tYX48nXE6Skg9nRlgg9clKvNLtWHNrRTGmgn0';
 const youtubeKey = 'AIzaSyAfMRljYNN6yDhCS7fmhbC46mfw9rQFE7g';
 const lyricsKey = 'jZTFcQIDm9bSctMHnFHDW3r0VMWGq55RucTyD4iWiYVip6thmqI1hfiQ1Z7xLxFU';
 
